@@ -1,0 +1,36 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "echo",
+            "type": "shell",
+            "command": "g++",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "args": [
+                "test.cpp",
+                "-Wall",
+                "-I",
+                "/home/michael/Desktop/vcpkg/installed/x64-linux/include",
+                "-I/usr/include/python3.6m",
+                "-L",
+                "/home/michael/Desktop/vcpkg/installed/x64-linux/lib",
+                "-L /usr/lib/python3.6m",
+                
+                "-lcurl",
+                "-lssl",
+                "-lcrypto",
+                "-lz",
+                "-ldl",
+                "-lpthread",
+                "-lpython3.6m"
+                
+                
+            ]
+        }
+    ]
+}
