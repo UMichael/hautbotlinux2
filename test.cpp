@@ -244,7 +244,7 @@ void selenium(bool allow, bool fast, int &check, bool &vals)
 				"driver.quit()\n");
 			continue;
 		}
-		val = "fillPassword.send_keys('Loveuall2')";
+		val = "fillPassword.send_keys('put your password here')";
 		test = PyRun_SimpleString(val.c_str());
 		if (test != 0)
 		{
